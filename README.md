@@ -4,7 +4,9 @@
 Like the classic Cookie Clicker™️, but with cake! Click the cake, buy upgrades, and... well... that's about it really.
 
 ## Installation
-Clone this directory<br>
+Try it out [here!](https://cake-clicker.vercel.app/)<br>
+or<br>
+`clone` this directory<br>
 `cd cake-clicker`<br>
 `npm i` to install dependencies<br>
 `npm start` to run the server<br>
