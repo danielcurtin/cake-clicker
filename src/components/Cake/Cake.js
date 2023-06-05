@@ -1,10 +1,10 @@
 import './Cake.css';
 import cake from '../../assets/cake.png';
 
-const Cake = () => {
+const Cake = ({ clickCake }) => {
   return (
     <>
-      <img src={cake} alt="Cartoon slice of cake" className='cake'></img>
+      <img src={cake} alt="Cartoon slice of cake" className='cake' onClick={() => clickCake()}></img>
     </>
   );
 };
