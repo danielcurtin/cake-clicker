@@ -1,0 +1,17 @@
+.upgrades {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.upgrades > button {
+  height: 100px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}

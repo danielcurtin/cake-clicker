@@ -1,0 +1,7 @@
+.cake {
+  width: 25%;
+}
+
+.cake:active {
+  scale: 1.02;
+}

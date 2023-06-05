@@ -1,0 +1,12 @@
+.points-container {
+  text-align: center;
+  height: 10%;
+  width: fit-content;
+  background: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.points {
+  font-size: 3rem;
+}
