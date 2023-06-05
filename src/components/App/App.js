@@ -50,6 +50,10 @@ const App = () => {
     };
   };
 
+  const save = () => {
+
+  };
+
   const restart = () => {
     clearInterval(cpsInterval);
     setCakes(0);
@@ -69,6 +73,7 @@ const App = () => {
 
   return (
     <main>
+      <button className='save' onClick={() => save()}>Save</button>
       <button className='restart' onClick={() => restart()}>Restart</button>
       <Points num={cakes} cps={cps}/>
       <Cake clickCake={clickCake}/>
