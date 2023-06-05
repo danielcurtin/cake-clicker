@@ -12,7 +12,7 @@ main {
 }
 
 .save,
-.restart {
+.clear {
   height: 50px;
   width: 100px;
   position: absolute;
@@ -29,11 +29,11 @@ main {
   top: 10px;
 }
 
-.restart {
+.clear {
   top: 65px;
 }
 
 .save:hover,
-.restart:hover {
+.clear:hover {
   box-shadow: 0px 0px 10px white;
 }
