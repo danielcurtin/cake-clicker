@@ -5,17 +5,33 @@
   gap: 1rem;
 }
 
-.upgrades > button {
-  height: 100px;
-  width: 150px;
-  border: none;
+.upgrade {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.level {
+  font-size: 1.75rem;
+  margin-bottom: 5px;
+}
+
+.upgrade > button {
+  height: 125px;
+  width: 175px;
+  border: 1px solid white;
   border-radius: 15px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+  background: transparent;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 0px 0px 5px black;
 }
 
-.upgrades > button:hover {
-  box-shadow: 0px 0px 30px white;
+.upgrade > button:hover {
+  box-shadow: 0px 0px 20px white;
 }

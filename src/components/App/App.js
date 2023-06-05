@@ -49,7 +49,17 @@ const App = () => {
     <main>
       <Points num={cakes} cps={cps}/>
       <Cake clickCake={clickCake}/>
-      <Upgrades buyUpgrade={buyUpgrade} partyCost={partyCost} birthdayCost={birthdayCost} gradCost={gradCost} marriageCost={marriageCost}/>
+      <Upgrades 
+        buyUpgrade={buyUpgrade} 
+        partyLevel={partyLevel} 
+        partyCost={partyCost} 
+        birthdayLevel={birthdayLevel} 
+        birthdayCost={birthdayCost} 
+        gradLevel={gradLevel} 
+        gradCost={gradCost} 
+        marriageLevel={marriageLevel} 
+        marriageCost={marriageCost}
+      />
     </main>
   );
 };
