@@ -47,11 +47,29 @@ const App = () => {
     } else if (type === 'marriage') {
       setMarriageLevel(prevState => prevState + 1);
       setMarriageCost(prevState => prevState * 2);
-    }
+    };
+  };
+
+  const restart = () => {
+    clearInterval(cpsInterval);
+    setCakes(0);
+    setCps(0);
+    setClickPowerLevel(1);
+    setClickPowerCost(100);
+    setPartyLevel(0);
+    setPartyCost(5);
+    setBirthdayLevel(0);
+    setBirthdayCost(50);
+    setGradLevel(0);
+    setGradCost(500);
+    setMarriageLevel(0);
+    setMarriageCost(2500);
+    setCpsInterval(0);
   };
 
   return (
     <main>
+      <button className='restart' onClick={() => restart()}>Restart</button>
       <Points num={cakes} cps={cps}/>
       <Cake clickCake={clickCake}/>
       <Upgrades 
