@@ -1,8 +1,16 @@
 import './Upgrades.css';
 
-const Upgrades = ({ buyUpgrade, partyLevel, partyCost, birthdayLevel, birthdayCost, gradLevel, gradCost, marriageLevel, marriageCost }) => {
+const Upgrades = ({ buyUpgrade, clickPowerLevel, clickPowerCost, partyLevel, partyCost, birthdayLevel, birthdayCost, gradLevel, gradCost, marriageLevel, marriageCost }) => {
   return (
     <div className='upgrades'>
+      <div className='upgrade'>
+        <h2 className='level'>Level: {clickPowerLevel}</h2>
+        <button className='party' onClick={() => buyUpgrade('click', 0, clickPowerCost)}>
+          <h3>Sugar Rush</h3>
+          <p>+1 Click Power</p>
+          <p>Cost: {clickPowerCost}</p>
+        </button>
+      </div>
       <div className='upgrade'>
         <h2 className='level'>Level: {partyLevel}</h2>
         <button className='party' onClick={() => buyUpgrade('party', 1, partyCost)}>
@@ -21,17 +29,17 @@ const Upgrades = ({ buyUpgrade, partyLevel, partyCost, birthdayLevel, birthdayCo
       </div>
       <div className='upgrade'>
         <h2 className='level'>Level: {gradLevel}</h2>
-        <button className='graduate' onClick={() => buyUpgrade('grad', 10, gradCost)}>
+        <button className='graduate' onClick={() => buyUpgrade('grad', 25, gradCost)}>
           <h3>Graduation</h3>
-          <p>+10 CPS</p>
+          <p>+25 CPS</p>
           <p>Cost: {gradCost}</p>
         </button>
       </div>
       <div className='upgrade'>
         <h2 className='level'>Level: {marriageLevel}</h2>
-        <button className='marriage' onClick={() => buyUpgrade('marriage', 20, marriageCost)}>
+        <button className='marriage' onClick={() => buyUpgrade('marriage', 100, marriageCost)}>
           <h3>Marriage</h3>
-          <p>+20 CPS</p>
+          <p>+100 CPS</p>
           <p>Cost: {marriageCost}</p>
         </button>
       </div>
